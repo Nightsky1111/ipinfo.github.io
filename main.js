@@ -5,6 +5,6 @@ function getIP(json){
 
 console.log(getIP)
 .then(() => {
-    let Data = [new Date()] = getIP
-    fs.writeFile("./data/data.json", JSON.stringify(Data))
+    let data = getIP[new Date()]
+    fs.writeFile("./data/data.json", JSON.stringify(data))
 })
