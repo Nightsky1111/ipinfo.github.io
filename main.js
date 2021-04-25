@@ -1,10 +1,16 @@
+const { resolve } = require("path")
 const fs = require('fs')
+const IPDATA = require('./data/data.json')
+
 function getIP(json){
-    alert('your ip is' + json.ip)
+    alert('your ip is' + json.ip);
 }
 
-console.log(getIP)
-.then(() => {
-    let data = getIP[new Date()]
-    fs.writeFile("./data/data.json", JSON.stringify(data))
-})
+
+
+
+if(KeyboardEvent("?")){
+    IPDATA[new Date()] = getIP
+    
+    fs.writeFile(resolve(process.cwd(), 'data/data.json'), JSON.stringify(IPDATA))
+}
