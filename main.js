@@ -1,4 +1,4 @@
-const { resolve } = require("path")
+const { resolve } = require("path");
 const fs = require('fs')
 const IPDATA = require('./data/data.json')
 
